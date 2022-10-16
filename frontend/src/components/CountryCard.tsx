@@ -8,9 +8,9 @@ import {
   ListItem,
   ListItemText,
 } from "@mui/material";
-import { Country } from "api";
-import { NavLink } from "components/Link";
-import { RouteKey } from "navigation";
+import NavLink from "./NavLink";
+import { RouteKey } from "../routes/RouteKey";
+import { Country } from "../interfaces/Country";
 
 const CountryCard = ({
   country,

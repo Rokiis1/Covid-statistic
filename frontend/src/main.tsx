@@ -1,13 +1,13 @@
-import * as React from "react";
-import ReactDOM from "react-dom";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "react-query";
 import CssBaseline from "@mui/material/CssBaseline";
-import App from "./App";
 
 const queryClient = new QueryClient();
 
-ReactDOM.render(
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.Fragment>
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
@@ -16,6 +16,5 @@ ReactDOM.render(
         <App />
       </BrowserRouter>
     </QueryClientProvider>
-  </React.Fragment>,
-  document.getElementById("root")
+  </React.Fragment>
 );

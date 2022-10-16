@@ -8,8 +8,8 @@ import {
   Typography,
   Divider,
 } from "@mui/material";
-import { getCountry } from "api";
-import { PageLoader } from "components/Loader";
+import { getCountry } from "../middleware/library/countries";
+import PageLoader from "../components/Loader";
 
 const CountryContainer = () => {
   const { id } = useParams();

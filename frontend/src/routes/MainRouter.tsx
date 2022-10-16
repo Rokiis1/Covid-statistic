@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
-import CountriesContainer from "containers/Countries";
-import CountryContainer from "containers/Country";
-import { RouteKey } from "./routes";
+import CountriesContainer from "../conatiner/CountriesConatiner";
+import CountryContainer from "../conatiner/CountryConatiner";
+import { RouteKey } from "./RouteKey";
 
 const MainRouter = () => (
   <Routes>

@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import { useQuery } from "react-query";
 import { Container, TextField } from "@mui/material";
-import { Country, getCountries } from "api";
-import { PageLoader } from "components/Loader";
-import CountryCard from "components/CountryCard";
+import { getCountries } from "../middleware/library/countries";
+import PageLoader from "../components/Loader";
+import CountryCard from "../components/CountryCard";
+import { Country } from "../interfaces/Country";
 
 const CountriesContainer = () => {
   const { data, isLoading } = useQuery("countries", getCountries);

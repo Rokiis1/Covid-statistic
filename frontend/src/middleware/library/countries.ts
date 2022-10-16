@@ -1,5 +1,5 @@
-import { get } from "./shared/requests";
-import { Country } from "./types";
+import { get } from "../requests/requests";
+import { Country } from "../../interfaces/Country";
 
 export const getCountries = async () => {
   const { data } = await get<Country[]>("/countries");

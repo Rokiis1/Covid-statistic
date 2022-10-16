@@ -1,13 +1,13 @@
-import Header from "components/Header";
-import MainRouter from "navigation/MainRouter";
+import Navigation from "./layouts/Navigation";
+import MainRouter from "./routes/MainRouter";
 
-function App() {
+const App = () => {
   return (
     <>
-      <Header />
+      <Navigation />
       <MainRouter />
     </>
   );
-}
+};
 
 export default App;
